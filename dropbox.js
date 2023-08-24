@@ -37,17 +37,11 @@ class Dropbox
     {
         e.stopPropagation();
         e.preventDefault();
-        const htmlElement = e.target;
-        htmlElement.classList.remove('drop');
-        htmlElement.classList.add('drag');
     }
     dragLeave(e)
     {
         e.stopPropagation();
         e.preventDefault();
-        const htmlElement = e.target;
-        htmlElement.classList.remove('drag');
-        htmlElement.classList.remove('drop');
     }
     dragOver(e)
     {
@@ -58,9 +52,6 @@ class Dropbox
     {
         e.stopPropagation();
         e.preventDefault();
-        const htmlElement = e.target;
-        htmlElement.classList.remove('drag');
-        htmlElement.classList.add('drop');
 
         const dataTransfer = e.dataTransfer;
         const files = dataTransfer.files;
