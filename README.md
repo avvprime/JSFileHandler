@@ -17,6 +17,6 @@ dropbox.onprogress,
 dropbox.onload,
 dropbox.onloadend,
 dropbox.onerror,
-dropbox.onabort  => FileReader API events, will be called for each file and returns ProgressEvent
+dropbox.onabort  => FileReader API events returns ProgressEvent
 ```
 
