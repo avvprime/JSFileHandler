@@ -93,7 +93,8 @@ class Dropbox
             }
 
             const reader = new FileReader();
-            
+
+            reader.fileName = file.name;
             reader.onloadstart = this.onloadstart;
             reader.onprogress = this.onprogress;
             reader.onload = this.onload;
